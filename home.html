@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Approval System</title>
+</head>
+<body bgcolor="gray" >
+<center><h1>Loan approval prediction</h1></center>
+<br>
+<br>
+<form action="\predict" method="post">
+<center>
+<label>Gender
+<select name="Gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+</label>
+<br>
+<br>
+<label>Married
+<select name="Married">
+    <option value="NO">No</option>
+    <option value="Yes">Yes</option>
+</select>
+</label>
+<br>
+<br>
+    <label>Dependents
+    <select name="Dependents">
+<option value=0>0</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+    </select>
+</label>
+    <br>
+    <br>
+<label>Education
+<select name="Education">
+    <option value="Not Graduate">Not Graduate</option>
+    <option value="Graduate">Graduate</option>
+</select>
+</label>
+<br>
+<br>
+    <label>Self_Employed
+<select name="Self_Employed">
+    <option value="No">No</option>
+    <option value="Yes">Yes</option>
+</select>
+</label>
+<br>
+<br>
+    <label for="Credit_History">Credit_History
+    </label>
+<input type="text" id="Credit_History" name="Credit_History"></input>
+
+    <br>
+    <br>
+<label>Property_Area
+<select name="Property_Area" id="operty_Area">
+    <option value="urban">urban</option>
+    <option value="Rural">Rural</option>
+    <option value="Semiurban">Semiurban</option>
+</select>
+</label>
+<br>
+
+ <br>
+<label for="Amount">Amount
+    </label>
+<input type="text" id="Amount" name="Amount"></input>
+
+    <input type="submit" value="predict">
+     </center>
+    <br>
+    <br>
+</form>
+<center>{{predict1}}</center>
+<center>{{val}}</center>
+<center>{{val2}}</center>
+<center>{{val3}}</center>
+</body>
+</html>
